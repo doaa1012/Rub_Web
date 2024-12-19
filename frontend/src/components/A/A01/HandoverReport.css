@@ -1,0 +1,59 @@
+
+
+.handover-report {
+  background-color: #f3f4f6; /* Light gray */
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  max-width: 80rem;
+  margin: 2.5rem auto;
+}
+
+.handover-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  color: #1e3a8a; /* Blue color */
+  margin-bottom: 2.5rem;
+}
+
+.table-container {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table-header {
+  background: linear-gradient(to right, #3b82f6, #1e40af) !important; /* Ensures a solid blue gradient */
+  color: white !important;
+  font-weight: 600;
+  text-align: left;
+}
+
+.table-header-cell {
+  padding: 1rem 1.5rem;
+}
+
+.table-cell {
+  padding: 1rem 1.5rem;
+}
+
+.hover-row:hover {
+  background-color: #bfdbfe; /* Light blue */
+}
+
+.table-link {
+  color: #2563eb; /* Link color */
+  font-weight: 600;
+}
+
+.table-link:hover {
+  text-decoration: underline;
+}
+
+.no-data {
+  text-align: center;
+  color: #6b7280; /* Gray */
+  padding: 1.5rem;
+}

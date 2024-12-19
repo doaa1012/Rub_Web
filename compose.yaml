@@ -1,0 +1,54 @@
+version: '3.8'
+
+services:
+  db:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: sqlserver
+    environment:
+      SA_PASSWORD: "Sh1012@@@"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sql_data:/var/opt/mssql
+
+  backend:
+    build:
+      context: ./backend
+    volumes:
+      - ./backend:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=mssql://sa:Sh1012@@@sqlserver:1433/RUB_CRC1625
+    command: >
+      sh -c "python manage.py makemigrations &&
+             python manage.py migrate &&
+             python manage.py runserver 0.0.0.0:8000"
+
+  frontend:
+    build:
+      context: ./frontend
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "5173:5173"  # Map the Vite dev server port
+    depends_on:
+      - backend
+    environment:
+      - VITE_BACKEND_URL=http://localhost:8000  # Pass the backend URL for Vite
+
+  passwordhashapi:
+    build:
+      context: ./PasswordHashAPI
+    ports:
+      - "5046:80"  # Expose ASP.NET API
+    depends_on:
+      - db
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=sqlserver;Database=RUB_CRC1625;User Id=sa;Password=Sh1012@@@;
+
+volumes:
+  sql_data:

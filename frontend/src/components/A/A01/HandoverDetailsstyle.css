@@ -1,0 +1,125 @@
+.handover-section {
+  padding: 1.5rem;
+  background-color: #f9f9fb;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.handover-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #2f855a;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.handover-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.handover-table th {
+  background-color: #48bb78;
+  color: #fff;
+  padding: 1rem;
+  font-weight: 600;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.handover-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.handover-table tr:nth-child(even) {
+  background-color: #f7fafc; /* Light gray for alternate rows */
+}
+
+.handover-table tr:hover {
+  background-color: #e6fffa; /* Light teal on hover */
+}
+
+.bg-yellow-100 {
+  background-color: #fefcbf; /* Yellow for pending rows */
+}
+
+.bg-green-50 {
+  background-color: #f0fff4; /* Light green for normal rows */
+}
+
+.hover\\:bg-green-100:hover {
+  background-color: #c6f6d5;
+}
+
+.text-blue-600 {
+  color: #2b6cb0;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.text-blue-600:hover {
+  color: #2c5282;
+}
+
+.textarea-style {
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 0.5rem;
+  width: 100%;
+  resize: vertical;
+}
+
+.confirm-button {
+  background-color: #38a169;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.confirm-button:hover {
+  background-color: #2f855a;
+}
+
+/* ObjectDetailStyles.css */
+
+.property-table-container {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+}
+
+.property-table th {
+  background-color: #1e3a8a; /* Deep blue color for the header */
+  color: #ffffff;
+  padding: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.property-table td {
+  padding: 12px;
+  border-right: 1px solid #86a0d4;
+}
+
+.property-table tbody tr:nth-child(even) {
+  background-color: #eaeff9; /* Light blue for alternating rows */
+}
+
+.property-table tbody tr:hover {
+  background-color:  #e6f2ff; /* Slightly darker blue on hover */
+}
+
+.property-table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}

@@ -1,0 +1,312 @@
+/* General page styling */
+.page-container {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.page-header {
+  text-align: center;
+  background-color: #2072c9;
+  color: white;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(232, 229, 229, 0.1);
+}
+
+.page-header h1 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.chart-container {
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.chart-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.chart {
+  padding: 20px;
+}
+
+
+/* Styles for the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f4f4;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Styles for the table rows */
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr {
+  background-color: white;
+}
+
+/* Conditional row styling */
+tr[data-linked="true"] {
+  background-color: #d4edda; /* Light green for verified/completed ideas */
+}
+
+tr[data-linked="false"] {
+  background-color: #f8d7da; /* Light red for pending/open ideas */
+}
+
+/* Link styling */
+.table-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.table-link:hover {
+  text-decoration: underline;
+}
+
+/* Description styling */
+.table-description {
+  display: block;
+  margin-top: 5px;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Center-align text in 'Samples Synthesised' column */
+td[data-label="Samples Synthesised"] {
+  text-align: center;
+}
+
+td {
+  font-size: 14px;
+}
+
+/* Conditional row styling based on sample count */
+tr[data-sample-count="true"] {
+  background-color: #d4edda; /* Light green for verified/completed ideas */
+}
+
+tr[data-sample-count="false"] {
+  background-color: #f8d7da; /* Light red for pending/open ideas */
+}
+
+/* Additional styling for the links and descriptions */
+.table-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.table-link:hover {
+  text-decoration: underline;
+}
+
+.table-description {
+  display: block;
+  margin-top: 5px;
+  color: #6c757d;
+}
+
+/* --- New Styles for Sidebar and Buttons --- */
+
+/* Sidebar styles */
+.sidebar {
+  width: 250px;
+  transition: width 0.3s ease;
+  border-right: 1px solid #ccc;
+  background-color: #f8f9fa;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.sidebar.closed {
+  width: 50px;
+  padding: 10px;
+}
+
+.toggle-filters-btn {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* Section styles for sidebar */
+.filter-section {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+}
+
+.filter-section h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Checkbox styling */
+.checkbox-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* Buttons for selecting and deselecting */
+.select-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.select-all {
+  background-color: #28a745;
+  color: white;
+}
+
+.deselect-all {
+  background-color: #dc3545;
+  color: white;
+}
+
+.select-btn:hover {
+  opacity: 0.8;
+}
+
+/* Date picker styling */
+.date-picker {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.date-picker label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+/* Sidebar styling */
+.sidebar {
+  width: 250px;
+  transition: width 0.3s ease;
+  border-right: 1px solid #ccc;
+  background-color: #f8f9fa;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.toggle-filters-btn {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.filter-section {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+}
+
+.filter-section h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.checkbox-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.select-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #28a745;
+  color: white;
+}
+
+.select-btn:hover {
+  opacity: 0.8;
+}
+
+.date-picker {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.date-picker label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.filter-section {
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}

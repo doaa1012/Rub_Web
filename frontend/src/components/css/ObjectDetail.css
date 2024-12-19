@@ -1,0 +1,383 @@
+.object-detail-container {
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  min-height: 100vh;
+}
+
+.object-detail-title {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.object-detail-info {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.object-detail-info p {
+  margin: 10px 0;
+  color: #34495e;
+}
+
+.handover-title, .associated-title, .referenced-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.associated-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  color: #155da4;
+}
+
+.referenced-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  color: #28a745;
+}
+
+.handover-table, .associated-grid, .referenced-grid {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.handover-table th, .handover-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.handover-table tr {
+  background-color: #ecf9f0;
+}
+
+.associated-grid, .referenced-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.object-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #2980b9;
+  text-align: left;
+  color: #2c3e50;
+  cursor: pointer;
+  word-wrap: break-word; /* Ensures long text wraps inside the card */
+  white-space: normal; /* Allows text to wrap */
+}
+
+.object-card h3 {
+  color: #2980b9;
+  font-size: 24px;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Adds ellipsis for long text */
+  white-space: nowrap; /* Keeps text on a single line */
+}
+
+.object-card-referenced {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #28a745;
+  text-align: left;
+  color: #28a745;
+  cursor: pointer;
+}
+
+.object-card-referenced h3 {
+  color: #28a745;
+  font-size: 24px;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Adds ellipsis for long text */
+  white-space: nowrap; /* Keeps text on a single line */
+}
+
+.workflow-button {
+  padding: 15px 30px;
+  background-color: #2a85e6;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.workflow-button:hover {
+  background-color: #0056b3;
+}
+
+.badge {
+  background-color: #155da4;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.badge-referenced {
+  background-color: #28a745;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+/* Updated "Properties" title style */
+.property-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #d20a0a;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #2980b9;
+}
+
+/* Updated table style */
+.property-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.property-table th, .property-table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.property-table th {
+  background-color: #2980b9;
+  color: white;
+  font-weight: bold;
+}
+
+.property-table td {
+  color: #333;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.property-table tr:nth-child(even) {
+  background-color: #f1f7ff;
+}
+
+.property-table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.property-table tr:hover {
+  background-color: #e3efff;
+}
+
+.property-table td {
+  font-size: 14px;
+}
+
+.property-table-container {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  padding: 15px;
+}
+.download-link {
+  color: #007bff; /* Link color */
+  text-decoration: underline; /* Underline to show it as a link */
+  cursor: pointer; /* Change the cursor to pointer on hover */
+}
+
+.download-link:hover {
+  color: #0056b3; /* Darker shade on hover */
+}
+
+.download-link:visited {
+  color: #6c757d; /* Different color for visited links */
+}
+
+/* Style for the Measurement Title */
+.measurement-title {
+  color: #155391; 
+  font-size: 1.2em; 
+  font-weight: bold; 
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+/* Style for the toggle indicator ( + / - ) */
+.measurement-title .toggle-indicator {
+  font-size: 1.2em;  /* Match the size of the title */
+  margin-left: 10px; /* Add some spacing */
+  color: #470707;       /* Slightly darker color for the indicator */
+}
+
+/* When hovering over the title, change the cursor and color */
+.measurement-title:hover {
+  color: #0056b3;    /* Darker shade on hover */
+}
+
+.workflow-button, .lsvs-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.workflow-button:hover, .lsvs-button:hover {
+  background-color: #45a049;
+}
+
+.lsvs-input-section {
+  background-color: white;
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 80%;
+  margin: 20px auto; /* Adjusted for spacing */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for aesthetics */
+}
+
+.lsvs-input-section form div {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lsvs-input-section label {
+  font-weight: bold;
+  margin-right: 10px;
+  flex: 1;
+}
+
+.lsvs-input-section input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+
+  flex: 2;
+}
+
+.lsvs-input-section button {
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.lsvs-input-section button:hover {
+  background-color: #0056b3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+table, th, td {
+  border: 1px solid #959ae0;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 14px;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #9ad3f1;
+}
+
+tr:hover {
+  background-color: #4a6ce9;
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  margin: 0 5px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #218838;
+}
+
+.pagination button.disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+

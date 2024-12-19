@@ -1,0 +1,205 @@
+/* Table Container */
+.table-container {
+  width: 100%;
+  margin: 20px auto;
+}
+
+/* Column Header Styles */
+.sample-column-header {
+  background-color: #f0f4c3; /* Light lime yellow */
+  width: 120px; /* Adjust to preferred width */
+}
+
+.name-column-header {
+  min-width: 300px; /* Set minimum width for name column */
+  white-space: normal; /* Allow text to wrap */
+  word-wrap: break-word; /* Break long words if needed */
+  background-color: #ccd6f2; /* Yellow background color */
+  text-align: center; /* Center text horizontally */
+  color: #333; /* Dark color for the text */
+  font-weight: bold;
+  font-size: 16px;
+  vertical-align: middle; /* Ensure vertical centering */
+  padding: 20px; /* Adjust padding for better appearance */
+}
+
+.initial-selection-header {
+  background-color: #fff9c4; /* Light pale yellow */
+}
+
+.refinement-header {
+  background-color: #c8e6c9; /* Light green */
+}
+
+.surface-modification-header {
+  background-color: #ffcdd2; /* Light red */
+}
+
+.microscopy-analysis-header {
+  background-color: #e3f2fd; /* Soft light blue (lighter than before) */
+}
+
+.simulation-feedback-header {
+  background-color: #ffe0b2; /* Light orange */
+}
+
+/* General Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fafafa; /* Light background color for the table */
+}
+
+th, td {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 10px;
+  vertical-align: middle; /* Vertically center text */
+}
+
+th {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+  background-color: #f8f8f8; /* Neutral light background */
+}
+
+td {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Remove link underline and use subtle blue for links */
+.table-link {
+  color: #333; /* Neutral dark color */
+  text-decoration: none;
+}
+
+.table-link:hover {
+  color: #555; /* Dark grey on hover */
+  text-decoration: underline;
+}
+
+/* Pagination Styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.pagination-button {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #333; /* Neutral dark color */
+  padding: 8px 12px;
+  margin: 0 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination-button:hover {
+  background-color: #555; /* Neutral dark grey hover */
+  color: #fff; /* White text on hover */
+}
+
+.pagination-button:disabled {
+  background-color: #e9ecef;
+  color: #6c757d;
+  cursor: not-allowed;
+}
+
+.pagination-button.active {
+  background-color: #333; /* Neutral dark active button */
+  color: #fff;
+  border-color: #333;
+}
+
+.pagination-ellipsis {
+  margin: 0 4px;
+  color: #6c757d;
+  font-size: 18px;
+}
+
+/* Download Button */
+.download-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.download-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.download-button:hover {
+  background-color: #218838;
+}
+
+/* Styling for the green check mark */
+.green-checkmark {
+  color: green; /* Explicit green color */
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Page Title Styling */
+.page-title {
+  text-align: left;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Table Row Hover Effect */
+tr:hover {
+  background-color: #f1f1f1; /* Light grey on hover, no blue */
+}
+
+/* Row Alternating Colors */
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+/* Remove blue hover on links inside the table rows */
+a {
+  color: #333; /* Dark color for links */
+}
+
+a:hover {
+  color: #555; /* Neutral dark grey on hover */
+}
+
+/* Prevent buttons or other elements from showing blue on hover */
+button:hover, input[type="checkbox"]:hover {
+  background-color: #555; /* Neutral hover color */
+  color: #fff;
+}
+
+/* Override any browser-specific focus or active states that might be adding blue */
+*:focus {
+  outline: none;
+}
+/* Make Object ID appear as a clickable link */
+.sample-column-header a {
+  color: #007bff; /* Standard link blue color */
+  text-decoration: underline; /* Underline to indicate it's a link */
+  font-weight: bold; /* Make it stand out */
+}
+
+.sample-column-header a:hover {
+  color: #0056b3; /* Darker blue on hover */
+  text-decoration: underline; /* Keep underline on hover */
+}

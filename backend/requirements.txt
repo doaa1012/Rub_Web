@@ -1,0 +1,9 @@
+Django==5.0.8
+djangorestframework==3.14.0
+djangorestframework-simplejwt==5.2.2
+django-cors-headers==3.14.0
+xarray==2023.8.0
+xarray-datatree>=0.0.2,<1.0.0
+tqdm
+nptdms
+requests==2.31.0

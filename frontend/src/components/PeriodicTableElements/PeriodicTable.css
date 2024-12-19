@@ -1,0 +1,206 @@
+.periodic {
+  display: grid;
+  grid-template-columns: repeat(18, 50px);
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.periodic-row {
+  display: contents;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.element {
+  text-align: center;
+}
+
+.at_num {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.symbol {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.at_details {
+  font-size: 10px;
+  line-height: 1.2;
+}
+
+.cell.selected {
+  background-color: #2980b9;
+  color: white;
+}
+
+/* General styling for pagination */
+.pagination-controls {
+  display: flex;
+  justify-content: center; /* Center the pagination */
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Pagination container */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none; /* Remove bullet points */
+  gap: 10px; /* Space between the buttons */
+  padding: 0; /* Remove extra padding */
+  margin: 0; /* Remove extra margin */
+}
+
+/* Page numbers and buttons */
+.pagination .page-item {
+  display: inline-block;
+  min-width: 80px; /* Ensure all buttons have the same width */
+}
+
+.pagination .page-link {
+  display: inline-block;
+  text-align: center; /* Center the text */
+  padding: 10px 20px; /* Consistent padding */
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  color: #007bff;
+  transition: background-color 0.3s, border-color 0.3s;
+  min-width: 100px; /* Ensure all buttons have the same minimum width */
+  text-align: center; /* Center text inside the button */
+}
+
+/* Active page button */
+.pagination .active .page-link {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+/* Hover effect */
+.pagination .page-link:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Disabled buttons */
+.pagination .disabled .page-link {
+  color: #6c757d;
+  pointer-events: none;
+  background-color: #e9ecef;
+  border-color: #dee2e6;
+}
+
+/* Ensure consistent size for all buttons */
+.pagination .page-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px; /* Ensures buttons have the same height */
+  line-height: normal; /* Ensures text is vertically centered */
+}
+
+/* Styles for SearchResultsTable and SearchResultsDataset */
+
+/* General table styling */
+.table-container {
+  margin-top: 24px;
+  overflow-x: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.table {
+  min-width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+}
+
+/* Header styling */
+.table thead {
+  background-color: #f4f7fc; /* Light blue background */
+  color: #333; /* Darker text */
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.table th {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 2px solid #e3e8ef;
+}
+
+/* Table body styling */
+.table tbody tr {
+  transition: background-color 0.2s ease-in-out;
+}
+
+.table tbody tr:hover {
+  background-color: #ebf5ff; /* Light blue on hover */
+}
+
+.table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #e3e8ef;
+  font-size: 16px;
+  color: #4a5568; /* Change from gray to a bluish gray */
+}
+
+/* Link and button styling */
+.table-link {
+  color: #1a73e8; /* Google blue */
+  text-decoration: none;
+}
+
+.table-link:hover {
+  text-decoration: underline;
+}
+
+.download-btn {
+  background-color: #1a73e8; /* Google blue */
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #1669c1;
+}
+
+.no-file {
+  color: #420603; /* Reddish color for no file */
+}
+
+/* Text styles for empty results */
+.no-results-text {
+  color: #555;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+}
+/* Style for table links */
+.table-link {
+  color: #007bff; /* Bootstrap primary blue */
+  text-decoration: underline; /* Underline to make it clear it's a link */
+  cursor: pointer; /* Show pointer cursor to indicate it's clickable */
+}
+
+.table-link:hover {
+  color: #0056b3; /* Darker blue on hover */
+  text-decoration: underline;
+}

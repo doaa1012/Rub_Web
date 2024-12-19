@@ -1,0 +1,49 @@
+/* CompositionDetails.css */
+
+.composition-details {
+  margin-top: 20px;
+}
+
+.composition-details h3 {
+  font-size: 1.2rem;
+  color: #333333;
+  margin-bottom: 10px;
+  text-align: left; /* Align title to the left */
+}
+
+.composition-table {
+  width: 60%; /* Make the table smaller */
+  margin: 0 auto 0 0; /* Align the table to the left */
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.composition-table th, .composition-table td {
+  padding: 8px 12px;
+  text-align: left; /* Align the text inside cells to the left */
+  border: 1px solid #ddd;
+}
+
+.composition-table th {
+  background-color: #d3e4ff; 
+  color: #333;
+  font-weight: bold;
+}
+
+.composition-table tbody tr:nth-child(even) {
+  background-color: #e6f0ff; /* Light blue for even rows */
+}
+
+.composition-table tbody tr:nth-child(odd) {
+  background-color: #f9f9f9; /* White for odd rows */
+}
+
+.composition-table tbody tr:hover {
+  background-color: #d3e4ff; /* Darker blue on hover */
+}
+
+.composition-table td {
+  color: #333;
+}
